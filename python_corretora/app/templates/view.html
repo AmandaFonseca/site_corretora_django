@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fa/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo_bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carbon-components.min.css' %}">
+</head>
+
+<body>
+<div class="col-8 m-auto pt-2 pb-2 text-center">
+    <nav class="bx--breadcrumb bx--breadcrumb--no-trailing-slash" aria-label="breadcrumb">
+        <div class="bx--breadcrumb-item">
+            <a href="/" class="bx--link">Index</a>
+        </div>
+        <div class="bx--breadcrumb-item">
+            <a href="/form" class="bx--link">Formulário</a>
+        </div>
+    </nav>
+    <hr class="">
+</div>
+
+
+<div class="col-8 m-auto pt-2 pb-2 text-center">
+    <h1>Visualização</h1>
+</div>
+
+<div class="col-8 m-auto pt-3 pb-2 text-center">
+    <a href="/" class="btn btn-info">Voltar</a>
+</div>
+<div class="col-8 m-auto pt-4 pb-2 text-center">
+    <strong>Nome: {{db.nome}}</strong><br>
+    <strong>CPF: {{db.cpf}}</strong><br>
+    <strong>Email: {{db.email}}</strong><br>
+    <strong>Sexo: {{db.sexo}}</strong><br>
+    <strong>Telefone: {{db.telefone}}</strong><br>
+    <strong>Endereço: {{db.endereco}}</strong><br>
+    <strong>Idade: {{db.idade}}</strong><br>
+    <strong>Estado civil: {{db.status_civil}}</strong><br>
+    <strong>Salário: {{db.salario}}</strong><br>
+</div>
+</body>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</html>
