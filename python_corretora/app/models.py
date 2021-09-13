@@ -5,12 +5,10 @@ from django.db import models
 class Cliente(models.Model):
     SEX_CHOICES = (
         ('', 'Escolha uma opção',),
-        ('', 'Escolha uma opção',),
         ('F', 'Feminino',),
         ('M', 'Masculino',),
     )
     ESTADO_CIVIL_CHOICES = (
-        ('', 'Escolha uma opção',),
         ('', 'Escolha uma opção',),
         ('S', u'Solteiro'),
         ('C', u'Casado'),

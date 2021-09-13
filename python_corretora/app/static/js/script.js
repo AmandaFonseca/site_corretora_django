@@ -22,6 +22,7 @@
         {
             event.preventDefault();
             let data = new FormData(form);
+            console.log(data);
             let ajax = new XMLHttpRequest();
             let token = doc.querySelectorAll('input')[0].value;
             ajax.open('POST', form.action);
