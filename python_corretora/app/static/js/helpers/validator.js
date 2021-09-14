@@ -60,25 +60,6 @@ function validatePhone (phone) {
 (function(win,doc){
     'use strict';
 
-
-    var id_nome = document.querySelector('#id_cpf');
-    id_nome.setAttribute('onblur','TestaCPF2(this)')
-
-
-
-    /*Limpa formulario*/
-    let submit_create = document.querySelector('.btn-success');
-    submit_create.addEventListener ('keypress', (event) => {
-        let form_create = document.querySelector('.form');
-        form_create.querySelectorAll('input').forEach(element => {
-            console.log(element);
-            element.value = '';
-         })
-    });
-
-
-
-
     let cpf = document.querySelector('#id_cpf');
     let cpf_label = document.querySelector('.cpf_valido');
     let  id_telefone = document.querySelector('#id_telefone');
